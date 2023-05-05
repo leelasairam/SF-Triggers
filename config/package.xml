@@ -4,6 +4,8 @@
 		<members>CreateTaskUponOppStageChange</members>
 		<members>TotalContactsOnAccount</members>
 		<members>UpdateOppsUponChangingAccountActiveFieldToFalse</members>
+        <members>PreventAccountDeleteIfCasesAssociatedWithIt</members>
+		<members>UpdateAnnualRevenueOnAccountWhenOppInserteOrDeleted</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>55.0</version>
