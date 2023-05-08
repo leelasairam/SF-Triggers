@@ -6,6 +6,9 @@
 		<members>UpdateOppsUponChangingAccountActiveFieldToFalse</members>
         <members>PreventAccountDeleteIfCasesAssociatedWithIt</members>
 		<members>UpdateAnnualRevenueOnAccountWhenOppInserteOrDeleted</members>
+		<members>OnlySysAdminCanDeleteCase</members>
+		<members>IfAccountOwnerChangesItsContactsOwnerShouldChange</members>
+		<members>PreventAccountDeleteIfItIsCreated7DaysBack</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>55.0</version>

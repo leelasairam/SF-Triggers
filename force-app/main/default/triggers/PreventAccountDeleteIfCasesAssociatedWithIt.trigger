@@ -1,5 +1,5 @@
 trigger PreventAccountDeleteIfCasesAssociatedWithIt on Account (before delete) {
-	set<Id>ProcessAccount = new set<Id>();
+    set<Id>ProcessAccount = new set<Id>();
     for(Account a : Trigger.old){
         ProcessAccount.add(a.Id);
     }

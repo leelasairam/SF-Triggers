@@ -1,5 +1,5 @@
 trigger UpdateAnnualRevenueOnAccountWhenOppInserteOrDeleted on Opportunity (after insert,after delete) {
-	set<Id>ProcessOpp = new set<Id>();
+    set<Id>ProcessOpp = new set<Id>();
     if(Trigger.isInsert){
         for(Opportunity o : Trigger.New){
             if(o.AccountId!=null){

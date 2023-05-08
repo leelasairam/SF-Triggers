@@ -1,5 +1,5 @@
 trigger UpdateOppsUponChangingAccountActiveFieldToFalse on Account (after update) {
-	set<Id>ProcessAccounts = new set<Id>();
+    set<Id>ProcessAccounts = new set<Id>();
     for(Account a : Trigger.New){
         if(a.Active__c!=Trigger.oldMap.get(a.Id).Active__c && a.Active__c=='No'){
             ProcessAccounts.add(a.Id);
@@ -12,7 +12,7 @@ trigger UpdateOppsUponChangingAccountActiveFieldToFalse on Account (after update
             for(Opportunity o : a.Opportunities){
                 if(o.StageName!='Closed Won'){
                     o.StageName='Closed Lost';
-                	UpdateOpps.add(o);
+                    UpdateOpps.add(o);
                 }
             }
         }

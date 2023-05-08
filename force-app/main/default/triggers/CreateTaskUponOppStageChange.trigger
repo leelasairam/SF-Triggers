@@ -1,5 +1,5 @@
 trigger CreateTaskUponOppStageChange on Opportunity (after update) {
-	set<Id>ProcessOpp = new set<Id>();
+    set<Id>ProcessOpp = new set<Id>();
     for(Opportunity op : Trigger.New){
         if(op.StageName!=Trigger.oldMap.get(op.Id).StageName){
             ProcessOpp.add(op.Id);
