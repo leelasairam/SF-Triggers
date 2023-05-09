@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>CreateTaskUponOppStageChange</members>
+	<!--<members>CreateTaskUponOppStageChange</members>
 		<members>TotalContactsOnAccount</members>
 		<members>UpdateOppsUponChangingAccountActiveFieldToFalse</members>
         <members>PreventAccountDeleteIfCasesAssociatedWithIt</members>
 		<members>UpdateAnnualRevenueOnAccountWhenOppInserteOrDeleted</members>
 		<members>OnlySysAdminCanDeleteCase</members>
 		<members>IfAccountOwnerChangesItsContactsOwnerShouldChange</members>
-		<members>PreventAccountDeleteIfItIsCreated7DaysBack</members>
+		<members>PreventAccountDeleteIfItIsCreated7DaysBack</members>-->
+		<members>UpdateLatestCaseNumberOnAccount</members>
+		<members>UpdateAccFieldWithLatestOppAmount</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>55.0</version>
