@@ -8,9 +8,11 @@
 		<members>UpdateAnnualRevenueOnAccountWhenOppInserteOrDeleted</members>
 		<members>OnlySysAdminCanDeleteCase</members>
 		<members>IfAccountOwnerChangesItsContactsOwnerShouldChange</members>
-		<members>PreventAccountDeleteIfItIsCreated7DaysBack</members>-->
+		<members>PreventAccountDeleteIfItIsCreated7DaysBack</members>
 		<members>UpdateLatestCaseNumberOnAccount</members>
-		<members>UpdateAccFieldWithLatestOppAmount</members>
+		<members>UpdateAccFieldWithLatestOppAmount</members>-->
+		<members>PreventDeleteIfAccountIsActive</members>
+		<members>PreventDuplicateContactsBasedOnContactEmail</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>55.0</version>
